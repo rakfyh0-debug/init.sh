@@ -495,3 +495,54 @@ footer .copy {
 @media (max-width: 720px) {
   .project-feature { grid-template-columns: 1fr; }
 }
+
+/* ---------- Page À propos ---------- */
+
+.about-body {
+  max-width: 620px;
+}
+
+.about-body p {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin: 0 0 18px;
+}
+
+.about-body ul {
+  margin: 0 0 18px;
+  padding-left: 20px;
+  color: var(--text-dim);
+}
+
+.about-body ul li { margin-bottom: 6px; }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.contact-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.contact-list .label {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.contact-list a.value {
+  color: var(--accent);
+  font-size: 0.92rem;
+}

@@ -10,7 +10,7 @@ Dernière mise à jour : 16 septembre 2026
 - Téléphone obligatoire à l'inscription : à trancher
 
 ### Étape en cours (voir §3.5 de la feuille de route)
-Étape n° 6 : page À propos (a-propos.html)
+Étape n° 7 : Connexion / Inscription (auth.html) + Supabase Auth + reset-password.html
 
 ### Fichiers déjà créés et fonctionnels
 - Structure de dossiers complète (css/, js/, assets/images/, assets/icons/, data/)
@@ -18,14 +18,15 @@ Dernière mise à jour : 16 septembre 2026
 - linux.html terminé : en-tête, pour qui, 6 modules, résultats, comment ça se passe, CTA final
 - web.html terminé : même structure, orientée RéviBF, 6 modules formation web
 - projets.html terminé : RéviBF en grande carte détaillée, état vide pour futurs projets
-- css/style.css : base + styles page formation + styles page projets
+- a-propos.html terminé : parcours autodidacte, positionnement, liens réseaux
+- css/style.css : base + styles page formation + styles page projets + styles page À propos
 - README.md, js/main.js : créés mais vides
 
 ### Dernière action effectuée
-Page Projets (projets.html) construite, testée en local, validée, commitée et poussée sur GitHub
+Page À propos (a-propos.html) construite, testée en local, validée. Styles CSS ajoutés pour la page.
 
 ### Prochaine action prévue
-Construire a-propos.html (étape 6) : parcours autodidacte de Rak, positionnement Rhak_Override, liens réseaux
+Construire auth.html (étape 7) : Connexion / Inscription + Supabase Auth + reset-password.html
 
 ### Règles à ne jamais casser
 - Progression strictement linéaire par formation (voir §5.2 de la feuille de route)
