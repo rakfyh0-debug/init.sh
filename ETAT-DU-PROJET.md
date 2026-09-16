@@ -7,20 +7,21 @@ Dernière mise à jour : 16 septembre 2026
 - Relation avec Linux Master / technophile : projet distinct, aucune fusion, aucune réutilisation de code
 - Vidéos dans les modules : à trancher
 - Téléphone obligatoire à l'inscription : à trancher
-- Autres : voir feuille de route complète (PDF) pour tout le reste
 
 ### Étape en cours (voir §3.5 de la feuille de route)
-Étape n° 2 : page Accueil (index.html) + style.css de base
+Étape n° 3 : page Formation Linux (linux.html)
 
 ### Fichiers déjà créés et fonctionnels
 - Structure de dossiers complète (css/, js/, assets/images/, assets/icons/, data/)
-- index.html, css/style.css, js/main.js, README.md créés mais vides
+- index.html terminé : topbar, hero, section 2 formations, preuve sociale (RéviBF + TikTok), footer
+- css/style.css terminé : thème sombre/vert, responsive, testé desktop + mobile
+- README.md, js/main.js : créés mais vides
 
 ### Dernière action effectuée
-Création du dépôt GitHub + structure de dossiers (étape 1 de la feuille de route), validée par ls -la
+Page Accueil (index.html + style.css) construite, testée en local (python3 -m http.server), validée, commitée et poussée sur GitHub
 
 ### Prochaine action prévue
-Construire index.html et le style.css de base (étape 2)
+Construire linux.html (étape 3) : en-tête formation, "pour qui", programme des 6 modules, résultats finaux, bouton "Commencer"
 
 ### Règles à ne jamais casser
 - Progression strictement linéaire par formation (voir §5.2 de la feuille de route)
