@@ -10,20 +10,21 @@ Dernière mise à jour : 16 septembre 2026
 - Téléphone obligatoire à l'inscription : à trancher
 
 ### Étape en cours (voir §3.5 de la feuille de route)
-Étape n° 4 : page Formation Web (web.html)
+Étape n° 5 : page Projets (projets.html)
 
 ### Fichiers déjà créés et fonctionnels
 - Structure de dossiers complète (css/, js/, assets/images/, assets/icons/, data/)
 - index.html terminé : topbar, hero, section 2 formations, preuve sociale (RéviBF + TikTok), footer
 - linux.html terminé : en-tête, pour qui, 6 modules, résultats, comment ça se passe, CTA final
+- web.html terminé : même structure, orientée RéviBF, 6 modules formation web
 - css/style.css : base + styles page formation (badge, module-list, meta-list, outcomes, info-block, cta-final)
 - README.md, js/main.js : créés mais vides
 
 ### Dernière action effectuée
-Page Formation Linux (linux.html) construite, testée en local, validée, commitée et poussée sur GitHub
+Page Formation Web (web.html) construite, testée en local, validée, commitée et poussée sur GitHub
 
 ### Prochaine action prévue
-Construire web.html (étape 4) : même structure que linux.html, orientée RéviBF, 6 modules de la formation Web
+Construire projets.html (étape 5) : RéviBF en grande carte + autres projets (technophile, bots, etc.) en petites cartes
 
 ### Règles à ne jamais casser
 - Progression strictement linéaire par formation (voir §5.2 de la feuille de route)
