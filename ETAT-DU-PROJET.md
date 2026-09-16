@@ -10,21 +10,22 @@ Dernière mise à jour : 16 septembre 2026
 - Téléphone obligatoire à l'inscription : à trancher
 
 ### Étape en cours (voir §3.5 de la feuille de route)
-Étape n° 5 : page Projets (projets.html)
+Étape n° 6 : page À propos (a-propos.html)
 
 ### Fichiers déjà créés et fonctionnels
 - Structure de dossiers complète (css/, js/, assets/images/, assets/icons/, data/)
 - index.html terminé : topbar, hero, section 2 formations, preuve sociale (RéviBF + TikTok), footer
 - linux.html terminé : en-tête, pour qui, 6 modules, résultats, comment ça se passe, CTA final
 - web.html terminé : même structure, orientée RéviBF, 6 modules formation web
-- css/style.css : base + styles page formation (badge, module-list, meta-list, outcomes, info-block, cta-final)
+- projets.html terminé : RéviBF en grande carte détaillée, état vide pour futurs projets
+- css/style.css : base + styles page formation + styles page projets
 - README.md, js/main.js : créés mais vides
 
 ### Dernière action effectuée
-Page Formation Web (web.html) construite, testée en local, validée, commitée et poussée sur GitHub
+Page Projets (projets.html) construite, testée en local, validée, commitée et poussée sur GitHub
 
 ### Prochaine action prévue
-Construire projets.html (étape 5) : RéviBF en grande carte + autres projets (technophile, bots, etc.) en petites cartes
+Construire a-propos.html (étape 6) : parcours autodidacte de Rak, positionnement Rhak_Override, liens réseaux
 
 ### Règles à ne jamais casser
 - Progression strictement linéaire par formation (voir §5.2 de la feuille de route)
@@ -39,3 +40,4 @@ Construire projets.html (étape 5) : RéviBF en grande carte + autres projets (t
 - Rédaction du contenu : Rak seul ou structuré avec assistance IA ?
 - Validation des modules : bouton simple ou mini-quiz plus tard ?
 - Communauté : groupe WhatsApp/Telegram ou non ?
+- Autres projets à ajouter sur projets.html (technophile ? autres ?)
