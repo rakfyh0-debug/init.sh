@@ -5,23 +5,25 @@ Dernière mise à jour : 16 septembre 2026
 - Nom du projet : INIT.SH
 - Dépôt GitHub : rakfyh0-debug/init.sh (branche main)
 - Relation avec Linux Master / technophile : projet distinct, aucune fusion, aucune réutilisation de code
+- GitHub Pages activé : https://rakfyh0-debug.github.io/init.sh/
 - Vidéos dans les modules : à trancher
 - Téléphone obligatoire à l'inscription : à trancher
 
 ### Étape en cours (voir §3.5 de la feuille de route)
-Étape n° 3 : page Formation Linux (linux.html)
+Étape n° 4 : page Formation Web (web.html)
 
 ### Fichiers déjà créés et fonctionnels
 - Structure de dossiers complète (css/, js/, assets/images/, assets/icons/, data/)
 - index.html terminé : topbar, hero, section 2 formations, preuve sociale (RéviBF + TikTok), footer
-- css/style.css terminé : thème sombre/vert, responsive, testé desktop + mobile
+- linux.html terminé : en-tête, pour qui, 6 modules, résultats, comment ça se passe, CTA final
+- css/style.css : base + styles page formation (badge, module-list, meta-list, outcomes, info-block, cta-final)
 - README.md, js/main.js : créés mais vides
 
 ### Dernière action effectuée
-Page Accueil (index.html + style.css) construite, testée en local (python3 -m http.server), validée, commitée et poussée sur GitHub
+Page Formation Linux (linux.html) construite, testée en local, validée, commitée et poussée sur GitHub
 
 ### Prochaine action prévue
-Construire linux.html (étape 3) : en-tête formation, "pour qui", programme des 6 modules, résultats finaux, bouton "Commencer"
+Construire web.html (étape 4) : même structure que linux.html, orientée RéviBF, 6 modules de la formation Web
 
 ### Règles à ne jamais casser
 - Progression strictement linéaire par formation (voir §5.2 de la feuille de route)
