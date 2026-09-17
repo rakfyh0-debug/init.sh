@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module — init.sh</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">&gt;_</span> init.sh</a>
+    <nav class="nav">
+      <a href="index.html#formations">Formations</a>
+      <a href="projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <a href="membre.html" class="btn btn-outline">Mon espace</a>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <p class="module-meta" id="module-meta">Chargement…</p>
+    <h1 id="module-title">Chargement…</h1>
+    <div class="module-progress-bar"><div class="fill" id="progress-fill" style="width:0%;"></div></div>
+  </div>
+</section>
+
+<section class="section" id="loading-block">
+  <div class="wrap">
+    <p class="section-lead">Chargement du module…</p>
+  </div>
+</section>
+
+<section class="section" id="locked-block" style="display:none;">
+  <div class="wrap">
+    <div class="info-block">
+      <p style="margin:0; color:var(--text-dim);" id="locked-msg"></p>
+    </div>
+    <div style="margin-top:20px;">
+      <a href="membre.html" class="btn btn-outline">Retour à l'espace membre</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="content-block" style="display:none;">
+  <div class="wrap">
+    <div class="module-done-banner" id="done-banner">Ce module est déjà marqué comme terminé. Tu peux le revoir librement.</div>
+
+    <div class="lesson-body" id="lesson-body"></div>
+
+    <h2>À faire concrètement</h2>
+    <ul class="practice-list" id="practice-list"></ul>
+
+    <div style="margin:32px 0;">
+      <button id="btn-complete" class="btn btn-primary">J'ai terminé ce module</button>
+      <p id="complete-error" class="auth-error"></p>
+      <p id="complete-info" class="auth-info"></p>
+    </div>
+
+    <div class="module-nav">
+      <a href="#" id="link-prev" class="btn btn-outline" style="display:none;">← Module précédent</a>
+      <a href="membre.html" class="btn btn-outline">Retour à l'espace membre</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="error-block" style="display:none;">
+  <div class="wrap">
+    <p class="section-lead" id="error-msg"></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><span class="prompt">&gt;_</span> init.sh</span>
+    <div class="foot-links">
+      <a href="linux.html">Linux Pratique</a>
+      <a href="web.html">Web</a>
+      <a href="projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+    </div>
+    <span class="copy">© 2026 init.sh</span>
+  </div>
+</footer>
+
+<script src="js/supabase-js.min.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/module.js"></script>
+</body>
+</html>

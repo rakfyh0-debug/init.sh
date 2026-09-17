@@ -59,8 +59,27 @@ async function init() {
   document.getElementById('prog-linux').textContent = linuxDone + ' / 6';
   document.getElementById('prog-web').textContent   = webDone + ' / 6';
 
+  setFormationLink('link-linux', 'linux', linuxDone);
+  setFormationLink('link-web', 'web', webDone);
+
   loadingBlock.style.display = 'none';
   contentBlock.style.display = '';
+}
+
+function setFormationLink(linkId, formation, doneCount) {
+  const link = document.getElementById(linkId);
+  if (!link) return;
+
+  if (doneCount >= 6) {
+    link.textContent = 'Revoir';
+    link.href = `module.html?formation=${formation}&module=1`;
+  } else if (doneCount > 0) {
+    link.textContent = 'Continuer';
+    link.href = `module.html?formation=${formation}&module=${doneCount + 1}`;
+  } else {
+    link.textContent = 'Commencer';
+    link.href = `module.html?formation=${formation}&module=1`;
+  }
 }
 
 // Déconnexion

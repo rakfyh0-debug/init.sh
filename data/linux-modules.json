@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Installer Linux sur un vieux PC",
+    "lesson": [
+      "Un PC ancien tourne souvent mal sous Windows à cause de mises à jour de plus en plus lourdes. Linux, et particulièrement une distribution légère, peut lui redonner une seconde vie.",
+      "Avant d'installer quoi que ce soit, il faut préparer une clé USB bootable : un outil comme Rufus (Windows) ou dd (Linux/Mac) copie l'image ISO de la distribution sur la clé de façon à ce que le PC puisse démarrer dessus.",
+      "Au démarrage, il faut entrer dans le BIOS/UEFI (souvent en appuyant sur F2, F12, Suppr ou Échap juste après l'allumage) pour choisir de démarrer sur la clé USB plutôt que sur le disque dur.",
+      "Une fois l'installateur lancé, les étapes classiques sont : choisir la langue, le fuseau horaire, le partitionnement du disque (remplacement complet ou dual-boot à côté de Windows), puis la création du premier utilisateur.",
+      "Après l'installation, les problèmes les plus fréquents sont : le Wi-Fi qui ne fonctionne pas (souvent un pilote propriétaire manquant), la lenteur générale (vérifier qu'un environnement de bureau léger a bien été choisi), et l'écran qui reste noir au démarrage (souvent lié à la carte graphique, résolu en ajoutant un paramètre de démarrage)."
+    ],
+    "practice": [
+      "Prépare une clé USB bootable avec la distribution Linux de ton choix",
+      "Démarre dessus et lance l'installation sur ton PC (ou une machine de test/VM si tu préfères d'abord t'entraîner sans risque)",
+      "Termine l'installation jusqu'à l'écran de connexion",
+      "Si le Wi-Fi ou l'affichage posent problème, note l'erreur exacte avant de chercher une solution"
+    ]
+  },
+  { "id": 2, "title": "Le terminal pour de vrai", "lesson": [], "practice": [] },
+  { "id": 3, "title": "Root et administration de base", "lesson": [], "practice": [] },
+  { "id": 4, "title": "Automatisation simple", "lesson": [], "practice": [] },
+  { "id": 5, "title": "Kali Linux", "lesson": [], "practice": [] },
+  { "id": 6, "title": "Termux + environnement graphique", "lesson": [], "practice": [] }
+]
