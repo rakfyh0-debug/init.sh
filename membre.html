@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espace membre — init.sh</title>
+<meta name="description" content="Ton tableau de bord init.sh : les deux formations et ta progression.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">&gt;_</span> init.sh</a>
+    <nav class="nav">
+      <a href="index.html#formations">Formations</a>
+      <a href="projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <button id="btn-logout" class="btn btn-outline">Déconnexion</button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <h1 id="welcome">Bonjour.</h1>
+    <p class="lead" id="welcome-sub" style="display:none;">Choisis une formation pour commencer.</p>
+  </div>
+</section>
+
+<section class="section" id="loading-block">
+  <div class="wrap">
+    <p class="section-lead">Chargement…</p>
+  </div>
+</section>
+
+<section class="section" id="content-block" style="display:none;">
+  <div class="wrap">
+    <h2>Tes formations</h2>
+    <p class="section-lead">Chaque formation avance indépendamment. Tu peux suivre les deux en parallèle.</p>
+    <div class="cards">
+
+      <div class="card">
+        <h3>Linux Pratique</h3>
+        <p class="desc">Installer et maîtriser Linux, terminal, scripts, Kali, Termux.</p>
+        <p class="note">Progression : <span class="accent" id="prog-linux">0 / 6</span></p>
+        <a href="module.html?formation=linux&module=1" class="btn btn-primary">Commencer</a>
+      </div>
+
+      <div class="card">
+        <h3>Créer sa plateforme web</h3>
+        <p class="desc">Comprendre RéviBF, HTML/CSS/JS, quiz, mise en ligne.</p>
+        <p class="note">Progression : <span class="accent" id="prog-web">0 / 6</span></p>
+        <a href="module.html?formation=web&module=1" class="btn btn-primary">Commencer</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="error-block" style="display:none;">
+  <div class="wrap">
+    <p class="section-lead" id="error-msg"></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><span class="prompt">&gt;_</span> init.sh</span>
+    <div class="foot-links">
+      <a href="linux.html">Linux Pratique</a>
+      <a href="web.html">Web</a>
+      <a href="projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+    </div>
+    <span class="copy">© 2026 init.sh</span>
+  </div>
+</footer>
+
+<script src="js/supabase-js.min.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/membre.js"></script>
+</body>
+</html>

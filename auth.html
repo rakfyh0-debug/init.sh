@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexion / Inscription — init.sh</title>
+<meta name="description" content="Crée ton compte init.sh et accède aux formations Linux Pratique et Créer sa plateforme web.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="prompt">&gt;_</span> init.sh</a>
+    <nav class="nav">
+      <a href="index.html#formations">Formations</a>
+      <a href="projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <a href="auth.html" class="btn btn-outline">Connexion</a>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <h1>Connexion / Inscription</h1>
+    <p class="lead">Accès gratuit aux deux formations dès la création du compte.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="auth-card" id="auth-card" style="visibility:hidden;">
+
+      <div class="auth-tabs">
+        <button type="button" id="tab-login" class="active">Connexion</button>
+        <button type="button" id="tab-signup">Inscription</button>
+      </div>
+
+      <!-- Formulaire connexion -->
+      <form id="form-login" class="auth-form" novalidate>
+        <label>
+          Email
+          <input type="email" id="login-email" autocomplete="email" required>
+        </label>
+        <label>
+          Mot de passe
+          <input type="password" id="login-password" autocomplete="current-password" required>
+        </label>
+        <p id="login-error" class="auth-error"></p>
+        <p id="login-info" class="auth-info"></p>
+        <button type="submit" class="btn btn-primary">Se connecter</button>
+        <p class="auth-foot">
+          <a href="reset-password.html">Mot de passe oublié ?</a>
+        </p>
+      </form>
+
+      <!-- Formulaire inscription -->
+      <form id="form-signup" class="auth-form" style="display:none;" novalidate>
+        <label>
+          Nom
+          <input type="text" id="signup-nom" autocomplete="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" id="signup-email" autocomplete="email" required>
+        </label>
+        <label>
+          Mot de passe (8 caractères minimum)
+          <input type="password" id="signup-password" autocomplete="new-password" minlength="8" required>
+        </label>
+        <p id="signup-error" class="auth-error"></p>
+        <p id="signup-info" class="auth-info"></p>
+        <button type="submit" class="btn btn-primary">Créer mon compte</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><span class="prompt">&gt;_</span> init.sh</span>
+    <div class="foot-links">
+      <a href="linux.html">Linux Pratique</a>
+      <a href="web.html">Web</a>
+      <a href="projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+    </div>
+    <span class="copy">© 2026 init.sh</span>
+  </div>
+</footer>
+
+<script src="js/supabase-js.min.js"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
