@@ -8,40 +8,37 @@ Dernière mise à jour : 17 septembre 2026
 - GitHub Pages activé : https://rakfyh0-debug.github.io/init.sh/
 - Pas de téléphone à l'inscription
 - Suppression de progression autorisée pour l'élève
-- Vidéos dans les modules : à trancher
 
-### Étape en cours (voir §3.5 de la feuille de route)
-Étapes 1 à 8 : TERMINÉES. Toutes les pages du site existent et fonctionnent de bout en bout.
-Étape 9 : 404 personnalisée — reste à faire pour clore la liste des pages de la feuille de route.
-Ensuite : rédaction du vrai contenu des modules 2 à 6 (linux) et 1 à 6 (web), actuellement en placeholder "en cours de rédaction".
+### Étape en cours
+LES 9 PAGES DE LA FEUILLE DE ROUTE SONT TOUTES CONSTRUITES ET FONCTIONNELLES.
+Il ne reste plus de page à créer. Le chantier restant est le contenu, pas la structure :
+rédiger le vrai contenu pédagogique des 11 modules encore en placeholder
+(linux 2-6, web 1-6 — seul linux module 1 a du contenu réel).
 
-### Fichiers validés, testés et poussés sur GitHub (site fonctionnel de bout en bout)
-- index.html, linux.html, web.html, projets.html, a-propos.html : pages publiques avec nav-auth.js
-- auth.html + js/auth.js : connexion/inscription
-- reset-password.html + js/reset-password.js : testé de bout en bout
-- membre.html + js/membre.js : tableau de bord, liens dynamiques Commencer/Continuer/Revoir selon la progression réelle
-- module.html + js/module.js : moteur générique — vérifie le déverrouillage (module suivant = modules terminés + 1), affiche le contenu depuis data/*.json, écrit dans Supabase au clic "J'ai terminé", gère le doublon (code 23505) proprement, navigue vers le module suivant ou l'espace membre
-- data/linux-modules.json : Module 1 avec vrai contenu (installation), modules 2-6 en placeholder
-- data/web-modules.json : 6 modules en placeholder
-- js/nav-auth.js, js/supabase-js.min.js, js/supabase-config.js : inchangés depuis la dernière session
-- css/style.css : tous les styles jusqu'à module.html inclus
-- README.md, js/main.js : créés mais vides
+### Fichiers validés, testés et poussés sur GitHub (site complet et fonctionnel)
+- index.html, linux.html, web.html, projets.html, a-propos.html, auth.html, reset-password.html, membre.html, module.html, 404.html : les 10 pages (9 prévues + 404)
+- js/ : auth.js, membre.js, module.js, nav-auth.js, reset-password.js, supabase-config.js, supabase-js.min.js (local), main.js (vide, non utilisé)
+- data/linux-modules.json, data/web-modules.json : structure des 12 modules, module 1 Linux avec vrai contenu
+- css/style.css : feuille de style complète pour tout le site
+- README.md : présent
+- ETAT-DU-PROJET.md : ce fichier, tenu à jour à chaque session
 
-### Testé et confirmé par Rak (session du 17 septembre)
-- Navigation manuelle sur tous les modules (linux 1-6, web 1-6) : verrouillage respecté
-- Bouton "J'ai terminé ce module" : enregistrement Supabase + redirection fonctionnels
-- Retour sur membre.html : bouton et progression mis à jour correctement (Commencer/Continuer/Revoir)
+### Parcours utilisateur testé et validé de bout en bout
+Inscription → email de confirmation → connexion → espace membre → choix formation →
+module avec verrouillage → validation → progression sauvegardée → reprise cohérente
+(Commencer/Continuer/Revoir) → mot de passe oublié → déconnexion. Page 404 personnalisée en place.
 
-### Côté Supabase — inchangé, toujours fonctionnel
-- Projet Supabase : INIT.SH (région Europe), URL https://qjldkybaudufxtymixkq.supabase.co
+### Côté Supabase — fonctionnel
+- Projet INIT.SH (région Europe), URL https://qjldkybaudufxtymixkq.supabase.co
 - Tables profiles + progress avec RLS (6 policies), trigger on_auth_user_created
 
 ### Prochaine action prévue
-1. Construire 404.html (étape 9) : page d'erreur dans le style du site + lien vers l'accueil.
-2. Ensuite : décider qui rédige le contenu des 11 modules restants (Rak seul ou avec assistance IA — décision encore ouverte) et le faire module par module en suivant le modèle du Module 1 Linux (lesson[] + practice[] dans le JSON correspondant).
+Décider qui rédige le contenu des 11 modules restants (Rak seul ou avec assistance IA),
+puis les écrire un par un dans data/linux-modules.json et data/web-modules.json,
+sur le modèle du Module 1 Linux (champs "lesson" et "practice").
 
 ### Règles à ne jamais casser
-- Progression strictement linéaire par formation (voir §5.2)
+- Progression strictement linéaire par formation (voir §5.2 de la feuille de route)
 - RLS activée sur profiles et progress (voir §7.3)
 - supabase-js chargé en local, jamais via CDN externe (voir §3.3)
 - Aucun fichier régénéré en entier sans vérification préalable du contenu existant (voir §8.1)
