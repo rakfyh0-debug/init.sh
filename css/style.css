@@ -760,3 +760,138 @@ footer .copy {
   max-width: 420px;
   margin: 0 0 28px;
 }
+
+/* ---------- Améliorations visuelles : dégradés ---------- */
+
+:root {
+  --accent-grad: linear-gradient(135deg, #4ee0a0, #2f9d6c);
+  --glow: radial-gradient(circle at 20% 0%, rgba(62, 207, 142, 0.14), transparent 55%);
+}
+
+/* Fond légèrement animé derrière le hero et les en-têtes de page */
+.hero, .page-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before, .page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--glow);
+  pointer-events: none;
+}
+
+.hero .wrap, .page-header .wrap {
+  position: relative;
+}
+
+/* Boutons principaux en dégradé plutôt qu'aplat */
+.btn-primary {
+  background: var(--accent-grad);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5cf0af, #34ac76);
+  box-shadow: 0 4px 16px rgba(62, 207, 142, 0.25);
+}
+
+/* Badge "Gratuit" avec un léger dégradé */
+.badge {
+  background: linear-gradient(135deg, rgba(62,207,142,0.16), rgba(62,207,142,0.05));
+}
+
+/* Barre de progression en dégradé */
+.module-progress-bar .fill {
+  background: var(--accent-grad);
+}
+
+/* Logo en dégradé pour le symbole >_ */
+.logo .prompt {
+  background: var(--accent-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Léger liseré dégradé en haut des cartes principales */
+.card, .project-feature, .auth-card {
+  position: relative;
+}
+
+.card::before, .project-feature::before, .auth-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-grad);
+  opacity: 0;
+  border-radius: var(--radius) var(--radius) 0 0;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover::before, .project-feature:hover::before {
+  opacity: 1;
+}
+
+/* ---------- Menu mobile (hamburger) ---------- */
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@media (max-width: 720px) {
+  .nav-toggle { display: inline-flex; }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 24px 16px;
+    gap: 0;
+    z-index: 20;
+  }
+
+  .nav.nav-open { display: flex; }
+
+  .nav a {
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .nav a:first-child { border-top: none; }
+
+  /* Corrige les boutons de projets.html qui se chevauchaient sur mobile */
+  .project-feature .actions {
+    flex-direction: column;
+  }
+
+  .project-feature .actions .btn {
+    width: 100%;
+  }
+
+  /* Corrige la liste de contacts de a-propos.html : label/valeur collés sur mobile */
+  .contact-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
