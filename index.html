@@ -24,18 +24,28 @@
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <p class="kicker">$ init.sh --start</p>
-    <h1>Deux formations. Un seul principe : construire, pas regarder.</h1>
-    <p class="lead">
-      Apprends Linux du terminal jusqu'à root, ou construis ta propre plateforme web
-      comme RéviBF — étape par étape, en pratiquant sur ta machine.
-    </p>
-    <div class="actions">
-      <a href="linux.html" class="btn btn-primary">Voir la formation Linux</a>
-      <a href="web.html" class="btn btn-outline">Voir la formation Web</a>
+  <div class="wrap hero-flex">
+    <div class="hero-content">
+      <p class="kicker">$ init.sh --start</p>
+      <h1>Deux formations. Un seul principe : construire, pas regarder.</h1>
+      <p class="lead">
+        Apprends Linux du terminal jusqu'à root, ou construis ta propre plateforme web
+        comme RéviBF — étape par étape, en pratiquant sur ta machine.
+      </p>
+      <div class="actions">
+        <a href="linux.html" class="btn btn-primary">Voir la formation Linux</a>
+        <a href="web.html" class="btn btn-outline">Voir la formation Web</a>
+      </div>
+      <p class="note">Accès <span class="accent">gratuit</span> dès la création de compte.</p>
     </div>
-    <p class="note">Accès <span class="accent">gratuit</span> dès la création de compte.</p>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        </div>
+        <pre class="terminal-body" id="terminal-body"></pre>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -125,5 +135,6 @@
 <script src="js/supabase-config.js"></script>
 <script src="js/nav-auth.js"></script>
 <script src="js/nav-toggle.js"></script>
+<script src="js/hero-terminal.js"></script>
 </body>
 </html>
